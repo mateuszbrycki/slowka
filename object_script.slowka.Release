@@ -1,0 +1,12 @@
+INPUT(
+./release\addnew 1.o
+./release\addnew.o
+./release\main.o
+./release\mainwindow.o
+./release\managewordlist.o
+./release\words.o
+./release\qrc_images.o
+./release\moc_addnew.o
+./release\moc_mainwindow.o
+./release\moc_managewordlist.o
+);

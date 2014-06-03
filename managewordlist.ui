@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>manageWordList</class>
+ <widget class="QDialog" name="manageWordList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>687</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>661</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <attribute name="headerDefaultSectionSize">
+    <number>160</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Lp.</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>I forma</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>II forma</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>III forma</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tłumaczenie</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="addItem">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dodaj słówko</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteItem">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>360</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Usuń</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

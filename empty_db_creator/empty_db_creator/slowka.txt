@@ -1,0 +1,140 @@
+arise	arose	arisen	pojawić się
+awake	awoke	awoken	obudzić
+be (am/is/are)	was, were	been	być
+bear	bore	borne	znosić, udźwignąć coś
+beat	beat	beaten	zbić
+become	became	become	stawać się, zostawać kimś/czymś
+begin	began	begun	zaczynać
+bend	bent	bent	zginać, nachylać
+bet	bet	bet	zakładać się, obstawiać
+bind	bound	bound	wiązać, złączyć
+bite	bit	bitten	ugryźć
+bleed	bled	bled	krwawić
+break	broke	broken	łamać
+breed	bred	bred	hodować, wychować
+bring	brought	brought	przynosić
+build	built	built	budować
+burn	burned, burnt	burned, burnt	palić, parzyć
+buy	bought	bought	kupować
+cast	cast	cast	rzucić, zrzucić
+catch	caught	caught	łapać
+choose	chose	chosen	wybierać
+cling	clung	clung	przywrzeć, uczepić się
+come	came	come	przyjść, przyjechać
+cost	cost	cost	kosztować
+creep	crept	crept	skradać się, zakradać
+cut	cut	cut	ciąć, kroić
+deal	dealt	dealt	rozdawać, postępować, mieć do czynienia
+dig	dug	dug	kopać (np. w ziemi)
+do	did	done	robić
+draw	drew	drawn	rysować; pociągnąć
+dream	dreamed, dreamt	dreamed, dreamt	śnić, marzyć
+drink	drank	drunk	pić
+drive	drove	driven	prowadzić, kierować się czymś
+eat	ate	eaten	jeść
+fall	fell	fallen	padać, upadać, spadać
+feed	fed	fed	karmić, żywić
+feel	felt	felt	czuć
+fight	fought	fought	walczyć, bić się
+find	found	found	znaleźć
+fit	fit	fit	pasować
+flee	fled	fled	umykać, uciekać
+fling	flung	flung	rzucić, cisnąć
+fly	flew	flown	latać
+forbid	forbade	forbidden	zabraniać
+foretell	foretold	foretold	przepowiadać, przewidywać
+forget	forgot	forgotten	zapominać
+forgive	forgave	forgiven	wybaczać
+forsake	forsook	forsaken	porzucać, zaniechać
+freeze	froze	frozen	zamarzać
+get	got	got	dostawać
+give	gave	given	dawać
+go	went	gone	iść
+grind	ground	ground	zemleć, rozkruszyć, zgrzytać
+grow	grew	grown	rosnąć
+hang	hung	hung	zawieszać (coś, np. obraz)
+have	had	had	mieć
+hear	heard	heard	słyszeć
+hide	hid	hidden	chować, ukrywać
+hit	hit	hit	uderzać
+hold	held	held	trzymać, utrzymywać
+hurt	hurt	hurt	ranić, boleć
+keep	kept	kept	trzymać
+kneel	knelt, kneeled	knelt, kneeled	klękać, klęczeć
+knit	knit, knitted	knit, knitted	robić na drutach
+know	knew	known	znać, wiedzieć
+lay (put)	laid	laid	położyć, kłaść
+lead	led	led	prowadzić
+leap	leapt, leaped	leapt, leaped	skakać
+learn	learnt, learned	learnt, learned	uczyć się
+leave	left	left	opuszczać, wyjeżdżać, zostawiać
+lend	lent	lent	pożyczać
+let	let	let	pozwalać
+lie (recline)	lay	lain	leżeć, kłaść się
+light	lighted, lit	lighted, lit	zapalać, rozpalać, oświetlać
+lose	lost	lost	tracić, zgubić
+make	made	made	robić
+mean	meant	meant	znaczyć, oznaczać; mieć na myśli
+meet	met	met	spotykać
+pay	paid	paid	płacić
+prove	proved	proved, proven	udowadniać, dowieść
+put	put	put	kłaść
+quit	quit	quit	rzucać, opuszczać
+read	read	read	czytać
+ride	rode	ridden	jeździć
+ring	rang	rung	dzwonić
+rise	rose	risen	podnosić się, wzrastać
+run	ran	run	biec
+saw	sawed	sawn	piłować
+say	said	said	mówić
+see	saw	seen	widzieć
+seek	sought	sought	szukać, poszukiwać
+sell	sold	sold	sprzedawać
+send	sent	sent	wysyłać, słać
+set	set	set	umieszczać, ustawiać
+shake	shook	shaken	trząść, potrząsać
+shed	shed	shed	zrzucać, pozbywać się
+shine	shone	shone	świecić, błyszczeć
+shoot	shot	shot	strzelać
+show	showed	shown	pokazywać
+shrink	shrank	shrunk	kurczyć się, zbiegać
+shut	shut	shut	zamykać
+sing	sang	sung	śpiewać
+sink	sank	sunk	tonąć (o statku), zapadać się
+sit	sat	sat	siedzieć, siadać
+slay	slew	slain	zabijać
+sleep	slept	slept	spać
+slide	slid	slid	ślizgać się, zjeżdżać
+sling	slung	slung	cisnąć, miotać
+speak	spoke	spoken	mówić
+spend	spent	spent	spędzać, wydawać
+spin	spun	spun	kręcić, zakręcić czymś/się, obrócić
+split	split	split	dzielić, rodzielać
+spread	spread	spread	rozkładać, rozpościerać, rozsmarować
+spring	sprang	sprung	przeskakiwać, wyskakiwać
+stand	stood	stood	stać
+steal	stole	stolen	kraść
+stick	stuck	stuck	wbijać, wtykać, przyklejać
+sting	stung	stung	żądlić
+stink	stank	stunk	śmierdzieć, cuchnąć
+strike	struck	struck	uderzyć
+strive	strove	striven	zmagać się z czymś
+swear	swore	sworn	przysięgać, przeklinać
+sweep	swept	swept	zmiatać, zamiatać
+swim	swam	swum	pływać
+swing	swung	swung	machnąć, zakołysać
+take	took	taken	brać
+teach	taught	taught	uczyć
+tear	tore	torn	drzeć, rozdzierać
+tell	told	told	mówić
+think	thought	thought	myśleć
+throw	threw	thrown	rzucać
+tread	trod	trodden	kroczyć, stąpać
+understand	understood	understood	rozumieć
+wake	woke	woken	budzić
+wear	wore	worn	nosić, ubierać coś
+weep	wept	wept	płakać, szlochać
+win	won	won	wygrywać
+wind	wound	wound	nawijać, nakręcać, wić się
+wring	wrung	wrung	wykręcić, wyżąć coś, wycisnąć
+write	wrote	written	pisać

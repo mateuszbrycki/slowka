@@ -55,24 +55,9 @@ void manageWordList::paintTree()
     //czyszczenie drzewa
     this->ui->treeWidget->clear();
 
-    int i = 1;
-
     QList<QTreeWidgetItem *> treeItems; //kontener na elementy rysowanego drzewa
 
-    //dodanie wszystkich słowek do listy elementów drzewa + ustawienie kolumn
-    for(std::multiset<Words::Word>::iterator iElement = words->words.begin(); i <= words->words.size(); ++iElement, ++i)
-    {
-        treeItems.push_back(new QTreeWidgetItem()); //dodanie nowego elementu na koniec listy
-
-        QTreeWidgetItem * tmp = treeItems.back(); //bierzący ostatni element listy => ostatnie dodane słówko, ustawiamy je w kolumnach
-
-        tmp->setText(0, QString::number(i));
-        tmp->setText(1, iElement->firstForm);
-        tmp->setText(2, iElement->secondForm);
-        tmp->setText(3, iElement->thirdForm);
-        tmp->setText(4, iElement->translation);
-        tmp->setFlags(Qt::ItemIsEditable|Qt::ItemIsEnabled|Qt::ItemIsSelectable);
-    }
+    words->getAllWords(&treeItems);
 
     this->ui->treeWidget->setItemDelegateForColumn(0, new NoEditDelegate(this));
 
@@ -109,6 +94,6 @@ void manageWordList::on_deleteItem_released()
 manageWordList::~manageWordList()
 {
     //po zamknięciu okna zapisujemy zmiany do pliku
-    words->saveWords();
+    //words->saveWords();
     delete ui;
 }

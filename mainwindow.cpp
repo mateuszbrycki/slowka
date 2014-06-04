@@ -14,6 +14,7 @@
 #include <QKeyEvent>
 #include <QColor>
 #include "managewordlist.h"
+#include "words.h"
 
 MainWindow::MainWindow(QWidget *parent) :    QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -26,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent) :    QMainWindow(parent), ui(new Ui::Mai
     qsrand((uint)time.msec());
 
     //otworzenie pliku i wczytanie słów
-    words = new Words("slowka.txt");
+    words = new Words("words.db");
 
     random();
  }
@@ -35,7 +36,6 @@ void MainWindow::random()
 {
     words->randomAll();
     setRandomedForm();
-
 }
 
 void MainWindow::on_checkWords_released()
@@ -52,8 +52,6 @@ void MainWindow::on_checkWords_released()
     } else {
 
         bool allRight = true;
-        QString color;
-
         //sprawdzamy wpisane formy słówek i ustawiamy odpowiednie kolory napisów
         if(words->randomed->firstForm != firstFormIn)
         {

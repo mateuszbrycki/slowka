@@ -17,13 +17,15 @@ SOURCES += addnew.cpp \
  main.cpp \
  mainwindow.cpp \
  managewordlist.cpp \
- words.cpp
+ words.cpp \
+    sqlite/sqlite3.c
 
 HEADERS += addnew.h \
  mainwindow.h \
  managewordlist.h \
  noEditDelegate.h \
- words.h
+ words.h \
+    sqlite/sqlite3.h
 
 
 FORMS += addnew.ui \

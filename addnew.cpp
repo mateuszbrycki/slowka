@@ -34,7 +34,7 @@ void addNew::on_pushButton_released()
     {
         QMessageBox::warning(this, "Uwaga", "Jedno z wymaganych pól jest puste!");
     } else {
-        words->words.insert(Words::Word(firstForm, secondForm, thirdForm, translation)); //dodanie słówka do listy słówek
+        words->addWord(Words::Word(firstForm, secondForm, thirdForm, translation)); //dodanie słówka do listy słówek
         resetForm(); //wyczyszczenie formularza
         QMessageBox::information(this, "Dodano", "Wpisane słówko zostało dodane!");  
         emit added(); //wysłanie sygnału potwierdzającego dodanie słowa

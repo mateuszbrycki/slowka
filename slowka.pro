@@ -18,14 +18,16 @@ SOURCES += addnew.cpp \
  mainwindow.cpp \
  managewordlist.cpp \
  words.cpp \
-    sqlite/sqlite3.c
+    sqlite/sqlite3.c \
+    models/modelwords.cpp
 
 HEADERS += addnew.h \
  mainwindow.h \
  managewordlist.h \
  noEditDelegate.h \
  words.h \
-    sqlite/sqlite3.h
+    sqlite/sqlite3.h \
+    models/modelwords.h
 
 
 FORMS += addnew.ui \

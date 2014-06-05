@@ -6,6 +6,7 @@
 #include <QTextStream>
 #include <QTreeWidgetItem>
 #include "sqlite/sqlite3.h"
+#include "models/modelwords.h"
 
 class Words
 {
@@ -48,14 +49,14 @@ public:
         }
     };
 
-    //std::multiset<Word> words; //wszystkie słowa pobrane z pliku
     Word* randomed; //wylosowane słówko do wyświetlenia
     int randomedForm; //wylosowana forma słówka, która zostanie wypisana do formularza na początku
-    QString filename; //nazwa pliku zawierającego słówka
-    sqlite3* db;
-    int numberOfRows;
+    //QString filename; //nazwa pliku zawierającego słówka
+    //sqlite3* db;
+    //int numberOfRows;
 
-    Words(const QString filename);
+    Words();
+    Words(QString filname);
     ~Words();
 
     void randomAll(); //wylosowanie słowa oraz formy
@@ -66,26 +67,9 @@ public:
     void addWord(Word newWord);
 
 private:
+    modelWords* _model;
     Word* randomWord(); //losowanie słowa z wszystkich dostępnych
     int randomForm(); //losowanie pola formularza do wypełnienia
-
-    sqlite3* connectDB();
-    void doQuery(sqlite3* db, const char* query, int(*callback)(void *NotUsed, int argc, char **argv, char **azColName));
-    void doQuery(sqlite3* db, const char* query, int(*callback)(void *NotUsed, int argc, char **argv, char **azColName), void* arg = 0);
-
-    int getNumberOfRows();
-    Word* getWordByID(const int& id);
-    void editWordByID(const int& id, Words::Word newWord);
-    void deleteWordByID(const int& id);
-
-    static int setNumberOfRows(void *NotUsed, int argc, char **argv, char **azColName);
-    static int setWord(void *NotUsed, int argc, char **argv, char **azColName);
-    static int editWord(void *NotUsed, int argc, char **argv, char **azColName);
-    static int deleteWord(void *NotUsed, int argc, char **argv, char **azColName);
-    static int addWord(void *NotUsed, int argc, char **argv, char **azColName);
-    static int printAllWords(void *NotUsed, int argc, char **argv, char **azColName);
-
-    void getSQLError(const int& open, const char* zErrMsg);
 };
 
 #endif // WORDS_H

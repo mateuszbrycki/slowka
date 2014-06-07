@@ -78,7 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="queries.cpp" />
+    <ClCompile Include="empty_db.cpp" />
     <ClCompile Include="sqlite\sqlite3.c" />
   </ItemGroup>
   <ItemGroup>

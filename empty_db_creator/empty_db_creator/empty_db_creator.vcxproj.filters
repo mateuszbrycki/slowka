@@ -18,7 +18,7 @@
     <ClCompile Include="sqlite\sqlite3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="queries.cpp">
+    <ClCompile Include="empty_db.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

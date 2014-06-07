@@ -1,14 +1,16 @@
-﻿Build started 2014-06-04 13:33:01.
-     1>Project "C:\Users\Mateusz Brycki\SkyDrive\programy\c++\slowka\empty_db_creator\empty_db_creator\empty_db_creator.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2014-06-07 12:29:25.
+     1>Project "H:\c++\slowka\empty_db_creator\empty_db_creator\empty_db_creator.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt queries.cpp
-         queries.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt empty_db.cpp
+         empty_db.cpp
+     1>h:\c++\slowka\empty_db_creator\empty_db_creator\empty_db.cpp(75): warning C4305: 'initializing' : truncation from 'int' to 'char'
+     1>h:\c++\slowka\empty_db_creator\empty_db_creator\empty_db.cpp(75): warning C4309: 'initializing' : truncation of constant value
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mateusz Brycki\SkyDrive\programy\c++\slowka\empty_db_creator\Debug\empty_db_creator.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Mateusz Brycki\SkyDrive\programy\c++\slowka\empty_db_creator\Debug\empty_db_creator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Mateusz Brycki\SkyDrive\programy\c++\slowka\empty_db_creator\Debug\empty_db_creator.lib" /MACHINE:X86 Debug\queries.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\c++\slowka\empty_db_creator\Debug\empty_db_creator.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\c++\slowka\empty_db_creator\Debug\empty_db_creator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\c++\slowka\empty_db_creator\Debug\empty_db_creator.lib" /MACHINE:X86 Debug\empty_db.obj
          Debug\sqlite3.obj
-         empty_db_creator.vcxproj -> C:\Users\Mateusz Brycki\SkyDrive\programy\c++\slowka\empty_db_creator\Debug\empty_db_creator.exe
-     1>Done Building Project "C:\Users\Mateusz Brycki\SkyDrive\programy\c++\slowka\empty_db_creator\empty_db_creator\empty_db_creator.vcxproj" (Build target(s)).
+         empty_db_creator.vcxproj -> H:\c++\slowka\empty_db_creator\Debug\empty_db_creator.exe
+     1>Done Building Project "H:\c++\slowka\empty_db_creator\empty_db_creator\empty_db_creator.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.09
+Time Elapsed 00:00:01.33

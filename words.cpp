@@ -21,9 +21,10 @@ Words::Word* Words::randomWord()
     int max = (*_model->getNumberOfRows());
     int randomWord = qrand() % ((max + 1) - 1) + 1; //losowanie slowa
 
-    QStringList newWordList = (*_model->getWordByID(randomWord)).split(QRegExp("\\s+"));
+    QStringList newWordList = (*_model->getWordByID(randomWord)).split(QRegExp("\\$"));
 
-    Word* newWord = new Word(newWordList[1], newWordList[2], newWordList[3], newWordList[4]);
+    Word* newWord = new Word(newWordList[1].remove(" "), newWordList[2].remove(" "), newWordList[3].remove(" "), newWordList[4].remove(" "));
+
     return newWord;
 }
 
@@ -50,15 +51,15 @@ void Words::randomAll()
      //w zależności od zmienianej formy dodajemy nowe słówko
      //QString * changed = _model->getWordByID(number);
 
-     QStringList changedList = (*_model->getWordByID(number)).split(QRegExp("\\s+"));
+     QStringList changedList = (*_model->getWordByID(number)).split(QRegExp("\\$"));
      QString newWord;
      for(int x = 0; x < changedList.size(); x++)
      {
          if(x != form)
          {
-             newWord += changedList[x] + " ";
+             newWord += changedList[x] + "$";
          } else {
-             newWord += newValue + " ";
+             newWord += newValue + "$";
          }
      }
 
@@ -67,7 +68,7 @@ void Words::randomAll()
 
  void Words::addWord(Word newWord)
  {
-     QString newValue = newWord.firstForm + " " + newWord.secondForm + " " + newWord.thirdForm + " " + newWord.translation;
+     QString newValue = newWord.firstForm + "$" + newWord.secondForm + "$" + newWord.thirdForm + "$" + newWord.translation;
 
      _model->addWord(newValue);
  }

@@ -4,8 +4,15 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
+
+string delSpaces(string &str)
+{
+	str.erase(std::remove(str.begin(), str.end(), ' '), str.end());
+	return str;
+}
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName){
 	int i;
@@ -25,7 +32,7 @@ void doQuery(sqlite3 * db, const char* query, char *zErrMsg)
 		sqlite3_free(zErrMsg);
 	}
 	else{
-		cout << "Zapytanie zostalo poprawnie wykonane!"<<endl;
+		//cout << "Zapytanie zostalo poprawnie wykonane!"<<endl;
 	}
 }
 
@@ -65,7 +72,7 @@ int main()
 	{
 		while (!file.eof())
 		{
-			char split_char = '\t';
+			char split_char = ' \t';
 			string ch;
 
 			getline(file, ch);
@@ -74,6 +81,7 @@ int main()
 
 			for (string each; getline(split, each, split_char);)
 			{
+				//delSpaces(each);
 				tokens.push_back(each);
 
 				//je¿eli dodano do tekenów 4 kolejne s³owa to dodajemy je do words
@@ -87,6 +95,7 @@ int main()
 						" \' " + tokens[tokens.size() - 1] + "\', " \
 						" 0, 0, 0); ";
 
+					cout << tokens[tokens.size() - 4] << tokens[tokens.size() - 3] << tokens[tokens.size() - 2] << tokens[tokens.size() - 1]<<endl;
 					doQuery(db, instertQuery.c_str(), zErrMsg);
 					
 				}

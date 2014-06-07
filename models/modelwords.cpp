@@ -2,6 +2,9 @@
 #include <QDebug>
 #include <QStringList>
 #include <QString>
+#include <QMessageBox>
+
+#define TABLE_NAME "words"
 
 modelWords::modelWords()
 {}
@@ -41,7 +44,7 @@ int* modelWords::getNumberOfRows()
 */
 QString* modelWords::getWordByID(const int& id)
 {
-    QString query = "SELECT * FROM words WHERE id = " + QString::number(id) + ";";
+    QString query = "SELECT * FROM " + QString(TABLE_NAME) + " WHERE id = " + QString::number(id) + ";";
     QString* newWord = new QString();
     //doQuery(this->db, query.toStdString().c_str(), setWord, newWord);
 
@@ -59,8 +62,9 @@ QString* modelWords::getWordByID(const int& id)
   */
 void modelWords::editWordByID(const int& id, QString newWord)
 {
-    QStringList newWordList = newWord.split(QRegExp("\\s+")); //rozbicie formy słowa
-    QString query = "UPDATE words SET "\
+    QStringList newWordList = newWord.split(QRegExp("\\$")); //rozbicie formy słowa
+
+    QString query = "UPDATE " + QString(TABLE_NAME) + " SET "\
         "first = \'" + newWordList[1] + "\', " \
         "second = \'" + newWordList[2] + "\', " \
         "third = \'" + newWordList[3] + "\', " \
@@ -69,7 +73,7 @@ void modelWords::editWordByID(const int& id, QString newWord)
         "good = " + newWordList[6] + ", "\
         "user_order = " + newWordList[7] + ""\
         " WHERE id = " + QString::number(id) + ";";
-   qDebug()<<query;
+
    char *zErrMsg;
 
    int open = sqlite3_exec(this->db, query.toStdString().c_str(), NULL, 0, &zErrMsg);
@@ -81,7 +85,7 @@ void modelWords::editWordByID(const int& id, QString newWord)
 */
 void modelWords::deleteWordByID(const int& id)
 {
-    QString query = "DELETE FROM words WHERE id = " + QString::number(id) + ";";
+    QString query = "DELETE FROM " + QString(TABLE_NAME) + " WHERE id = " + QString::number(id) + ";";
 
     char *zErrMsg;
     int open = sqlite3_exec(this->db, query.toStdString().c_str(), NULL, 0, &zErrMsg);
@@ -94,9 +98,9 @@ void modelWords::deleteWordByID(const int& id)
 */
 void modelWords::addWord(QString newWord)
 {
-    QStringList newWordList = newWord.split(QRegExp("\\s+")); //rozbicie formy słowa
+    QStringList newWordList = newWord.split(QRegExp("\\$")); //rozbicie formy słowa
 
-   QString query = "INSERT INTO words (first, second, third, translation, wrong, good, user_order) "\
+   QString query = "INSERT INTO " + QString(TABLE_NAME) + " (first, second, third, translation, wrong, good, user_order) "\
         "VALUES(\'" + newWordList[0] + "\'," \
         "\'" + newWordList[1] + "\'," \
         "\'" + newWordList[2] + "\'," \
@@ -113,7 +117,7 @@ void modelWords::addWord(QString newWord)
 */
 void modelWords::getAllWords(QList<QTreeWidgetItem *>* treeItems)
 {
-   QString query = "SELECT * FROM words;";
+   QString query = "SELECT * FROM " + QString(TABLE_NAME) + ";";
    char* zErrMsg;
 
    int open = sqlite3_exec(this->db, query.toStdString().c_str(), printAllWords, (void*)treeItems, &zErrMsg);
@@ -135,7 +139,7 @@ int modelWords::setWord(void *NotUsed, int argc, char **argv, char **azColName)
     QString* newWord = reinterpret_cast<QString*>(NotUsed);
     for(int x = 0; x < argc; x++)
     {
-        *newWord += QString(argv[x]) + " ";
+        *newWord += QString(argv[x]) + "$";
     }
 
     return 0;
@@ -165,6 +169,7 @@ void modelWords::getSQLError(const int& open, const char* zErrMsg)
 {
    if (open != SQLITE_OK){
        fprintf(stderr, "SQL error: %s\n", zErrMsg);
+       QMessageBox::warning(NULL, "Uwaga", "Nieudane zapytanie do bazy danych!");
        sqlite3_free(&zErrMsg);
    }
 }

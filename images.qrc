@@ -2,5 +2,6 @@
     <qresource prefix="/images">
         <file>true.png</file>
         <file>false.png</file>
+        <file>icon.ico</file>
     </qresource>
 </RCC>
